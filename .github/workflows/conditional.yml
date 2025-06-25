@@ -1,4 +1,4 @@
-name: Hello Earth, Hello Mars
+name: Hello Earth Hello Mars
 
 on:
   push:
@@ -6,14 +6,14 @@ on:
       - main
             
 jobs:
-  hello_earhth: #job name
+  hello_earth: #job name
     runs-on: ubuntu-latest
     if: "contains(github.event.head_commit.message, '[earth]')"
     steps:
-    - run: "echo people of Earth"
+      - run: "echo people of Earth"
 
   hello_mars: #job name
     runs-on: ubuntu-latest
     if: "contains(github.event.head_commit.message, '[mars]')"
     steps:
-    - run: "echo people of Mars "
+      - run: "echo people of Mars "

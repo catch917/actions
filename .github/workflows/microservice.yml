@@ -1,7 +1,5 @@
 name: Microservice CI
 
-name: Microservice CI
-
 on:
   push:
     branches:
